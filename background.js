@@ -8,7 +8,7 @@ chrome.tabs.onUpdated.addListener((tabId, tab) => {
     // Interface to work with URL search Paramters.
     const urlParameters = new URLSearchParams(queryParameters);
 
-    // Sends message to the ContentScript.js ( It will have the access of the parameter function).
+    // Sends message to the ContentScript.js (It will have the access of the parameter 'type' and 'videoId').
     chrome.tabs.sendMessage(tabId, {
       type: "NEW",
       videoId: urlParameters.get("v"),
