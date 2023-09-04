@@ -1,12 +1,26 @@
 {
-  "name": "My YT Bookmarks",
+  "name": "Nikhil's Bookmark",
   "version": "0.1.0",
+
+  // Use.
   "description": "Saving timestamps in YT videos",
+  
+  //  We need permission from the Chrome browser to use:-
+  // 1. chrome.storage API
+  // w. chrome.tabs  API
   "permissions": ["storage", "tabs"],
+
+  // It specifies the website to the extension to operate on.
+  // in this case we need to work with the yt.
   "host_permissions": ["https://*.youtube.com/*"],
+
+  // Addonfeature of V3, Js file run that run independtly from main browser thread.
   "background": {
     "service_worker": "background.js"
   },
+
+  // Files that run in the contenxt of Webpages.
+  // Used to manipulate 'DOM' of the webpage that our extension is seeking.
   "content_scripts": [
     {
       "matches": ["https://*.youtube.com/*"],
