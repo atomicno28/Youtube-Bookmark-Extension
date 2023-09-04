@@ -1,5 +1,5 @@
 {
-  "name": "Nikhil's Bookmark",
+  "name": "Nikhil's Bookmarks",
   "version": "0.1.0",
 
   // Use.
@@ -10,16 +10,16 @@
   // w. chrome.tabs  API
   "permissions": ["storage", "tabs"],
 
-  // It specifies the website to the extension to operate on.
-  // in this case we need to work with the yt.
+  // It specifies the website to the extension to operate on. 
+  // in this case we need to work with the 'YOUTUBE'.
   "host_permissions": ["https://*.youtube.com/*"],
 
-  // Addonfeature of V3, Js file run that run independtly from main browser thread.
+  // Add-on feature of V3, Js file run that run independently from main browser thread.
   "background": {
     "service_worker": "background.js"
   },
 
-  // Files that run in the contenxt of Webpages.
+  // Files that run in the contenxt of Webpages. ( eg. contentScript.js )
   // Used to manipulate 'DOM' of the webpage that our extension is seeking.
   "content_scripts": [
     {
@@ -27,6 +27,9 @@
       "js": ["contentScript.js"]
     }
   ],
+
+  // Resource of extension that can be accessed by the webpage of matching website.
+  // (In this case - images)
   "web_accessible_resources": [
     {
       "resources": [
@@ -38,13 +41,16 @@
       "matches": ["https://*.youtube.com/*"]
     }
   ],
+
+  // It specifies all the action that will occur on clicking extension's icon.
   "action": {
     "default_icon": {
       "16": "assets/ext-icon.png",
       "24": "assets/ext-icon.png",
       "32": "assets/ext-icon.png"
     },
-    "default_title": "My YT Bookmarks",
+    "default_title": "Nikhil's Bookmarks",
+    // It will automatically render after the clicking effect.
     "default_popup": "popup.html"
   },
   "manifest_version": 3
