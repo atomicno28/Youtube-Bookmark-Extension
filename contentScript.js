@@ -1,9 +1,10 @@
 (() => {
 	
-  // one for icons and their location
-  // other for youtube video timestamp
+  // One for icons and their location
+  // Other for youtube video timestamp
   let youtubeLeftControls, youtubePlayer;
 
+  // Global variable that will used to identify the video.
   let currentVideo = "";
 
   let currentVideoBookmarks = [];
@@ -61,11 +62,11 @@
     }
   };
 
-  // actions on message recieved from background.js
+  // Actions when  message recieved from background.js
   chrome.runtime.onMessage.addListener((obj, sender, response) => {
     const { type, value, videoId } = obj;
 
-    // if new video is loaded.
+    // If new video is loaded.
     if (type === "NEW") {
       currentVideo = videoId;
       newVideoLoaded();
