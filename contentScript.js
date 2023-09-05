@@ -70,6 +70,8 @@
     // If new video is loaded.
     if (type === "NEW") {
       currentVideo = videoId;
+
+      // Call the newVideo Function.
       newVideoLoaded();
 
     }
