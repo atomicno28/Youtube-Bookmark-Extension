@@ -26,18 +26,21 @@
       desc: "Bookmark at " + getTime(currentTime),
     };
 
+    // Before adding to the bookmark, first pre-existing bookmarks must be loaded if they are present. 
     currentVideoBookmarks = await fetchBookmarks();
 
+    // Storing the timestamp of a praticular video in User's Browser.
     chrome.storage.sync.set({
       [currentVideo]: JSON.stringify([...currentVideoBookmarks, newBookmark].sort((a, b) => a.time - b.time))
     });
   };
 
+	
   const newVideoLoaded = async () => {
-   
    
     const bookmarkBtnExists = document.getElementsByClassName("bookmark-btn")[0];
 
+    // Loading the bookmarks related to that particular video.
     currentVideoBookmarks = await fetchBookmarks();
 
     // If button not created.
@@ -55,7 +58,7 @@
       // To access the Video-related info (components).
       youtubePlayer = document.getElementsByClassName('video-stream')[0];
 
-      // Adding Icon to the below of Scrollbar.
+      // Adding  (+) Icon to the control buttons..
       youtubeLeftControls.appendChild(bookmarkBtn);
 
       // On-Click Functionality on the icon to grab the timestamp of the video.
