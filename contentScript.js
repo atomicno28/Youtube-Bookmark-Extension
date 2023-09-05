@@ -1,3 +1,4 @@
+// IIFE Function.
 (() => {
 	
   // One for icons and their location
