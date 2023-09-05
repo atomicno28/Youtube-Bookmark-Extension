@@ -40,7 +40,7 @@
 
     currentVideoBookmarks = await fetchBookmarks();
 
-    // if button not created.
+    // If button not created.
     if (!bookmarkBtnExists) {
 
       // UI-Portion
@@ -49,16 +49,16 @@
       bookmarkBtn.className = "ytp-button " + "bookmark-btn";
       bookmarkBtn.title = "Click to bookmark current timestamp";
 	
-      // to access the {captions,miniplayer....} Sections.
+      // To access the {captions,miniplayer....} Sections.
       youtubeLeftControls = document.getElementsByClassName("ytp-left-controls")[0];
 
-      // to access the video-related info.
+      // To access the Video-related info (components).
       youtubePlayer = document.getElementsByClassName('video-stream')[0];
 
-      // adding ICON.
+      // Adding Icon to the below of Scrollbar.
       youtubeLeftControls.appendChild(bookmarkBtn);
 
-      // On-Click Functionality.
+      // On-Click Functionality on the icon to grab the timestamp of the video.
       bookmarkBtn.addEventListener("click", addNewBookmarkEventHandler);
     }
   };
@@ -88,7 +88,9 @@
     }
   });
 
+  // It will be invoked everytime our contentScript matches with the Youtube.com
   newVideoLoaded();
+	
 })();
 
 // substr is deprecated.
