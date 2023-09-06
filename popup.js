@@ -71,6 +71,7 @@ const setBookmarkAttributes =  (src, eventListener, controlParentElement) => {
   controlParentElement.appendChild(controlElement);
 };
 
+// A native window event handler that triggered when HTML document gets loaded.
 document.addEventListener("DOMContentLoaded", async () => {
   const activeTab = await getActiveTabURL();
   const queryParameters = activeTab.url.split("?")[1];
@@ -78,15 +79,23 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const currentVideo = urlParameters.get("v");
 
+  // If current video is YT video page
   if (activeTab.url.includes("youtube.com/watch") && currentVideo) {
     chrome.storage.sync.get([currentVideo], (data) => {
       const currentVideoBookmarks = data[currentVideo] ? JSON.parse(data[currentVideo]) : [];
 
       viewBookmarks(currentVideoBookmarks);
     });
-  } else {
+  }
+  // If the following link is Youtube Landing Page.
+  else if( activeTab.url == 'https://youtube.com')
+  {
+      const container = document.getElementsByClassName("container")[0];
+    container.innerHTML = '<div class="title">You\'re on Youtube Landing Page. Stream any video and add bookmarks inside me..</div>';
+  }
+  else {
+    // Create a container with empty spaces that represent prompt.
     const container = document.getElementsByClassName("container")[0];
-
     container.innerHTML = '<div class="title">This is not a youtube video page.</div>';
   }
 });
