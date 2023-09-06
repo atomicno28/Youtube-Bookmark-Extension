@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   }
   // If the following link is Youtube Landing Page.
-  else if( activeTab.url == 'https://youtube.com')
+  else if( activeTab.url === 'https://www.youtube.com/')
   {
       const container = document.getElementsByClassName("container")[0];
     container.innerHTML = '<div class="title">You\'re on Youtube Landing Page. Stream any video and add bookmarks inside me..</div>';
