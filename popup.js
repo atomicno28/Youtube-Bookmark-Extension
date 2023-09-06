@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   else if( activeTab.url === 'https://www.youtube.com/')
   {
       const container = document.getElementsByClassName("container")[0];
-    container.innerHTML = '<div class="title">You\'re on Youtube Landing Page. Stream any video and add bookmarks inside me..</div>';
+    container.innerHTML = '<div class="title">Stream any video and add bookmarks inside me..</div>';
   }
   else {
     // Create a container with empty spaces that represent prompt.
