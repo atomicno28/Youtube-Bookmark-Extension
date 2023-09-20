@@ -28,7 +28,7 @@ Bookmark your favorite video moments with ease! This extension allows you to sav
 ### Features
 - Bookmark timestamps with custom labels.
 - Quick access to saved timestamps.
-- Customize extension behavior in settings.
+- Customize extension behavior in settings. 
 
 ### Screenshots
 - Identifies whether the webpage is associated with YouTube or not.
@@ -38,6 +38,18 @@ Bookmark your favorite video moments with ease! This extension allows you to sav
 - Addresses the scenario where a webpage pertains to YouTube but does not specifically pertain to a particular video.
 
  ![Youtube-Landing-Page](https://github.com/atomicno28/Youtube-Bookmark-Extension/blob/main/Pictures/Youtube%20Landing%20Page.png)
+
+- Open any Youtube Video
+ 
+![OpenVideo](https://github.com/atomicno28/Youtube-Bookmark-Extension/blob/main/Pictures/Video.png)
+
+- Click on the '+' button to add it.
+
+![Bookmark-Button](https://github.com/atomicno28/Youtube-Bookmark-Extension/blob/main/Pictures/Timestamp.png)
+
+- Click on the Extension icon to check the bookmark
+
+ ![BOOKMARKS](https://github.com/atomicno28/Youtube-Bookmark-Extension/blob/main/Pictures/Timestamp%20recorded.png)
 
 ### Configuration
 Configure timestamp label format and more in the extension settings.
@@ -54,14 +66,6 @@ Have questions or suggestions? Reach out to us at nikzedit@email.com or find us 
 - **Issue:** Extension not working on a specific YouTube page.
   - **Solution:** Clear your browser cache and refresh the page.
 
-### Changelog
-View the [changelog](CHANGELOG.md) for version history.
-
 ### Demo
 Watch our [demo video](https://example.com/demo) to see the extension in action.
-
-### Acknowledgments
-We would like to thank the creators of [LibraryName](https://example.com/library) for their invaluable contribution to this project.
-
----
 
