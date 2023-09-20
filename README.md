@@ -31,7 +31,13 @@ Bookmark your favorite video moments with ease! This extension allows you to sav
 - Customize extension behavior in settings.
 
 ### Screenshots
-![Demo](demo.gif)
+- Identifies whether the webpage is associated with YouTube or not.
+  
+![NewTab](https://github.com/atomicno28/Youtube-Bookmark-Extension/blob/main/Pictures/New%20Tab.png)
+
+- Addresses the scenario where a webpage pertains to YouTube but does not specifically pertain to a particular video.
+
+ ![Youtube-Landing-Page](https://github.com/atomicno28/Youtube-Bookmark-Extension/blob/main/Pictures/Youtube%20Landing%20Page.png)
 
 ### Configuration
 Configure timestamp label format and more in the extension settings.
