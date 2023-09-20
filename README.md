@@ -1,9 +1,61 @@
-# Youtube-Bookmark-Extension
+# YouTube Bookmark Extension
 
- Created a Chrome browser extension using JavaScript and the new iteration of the web extensions platform, called Manifest V3.
+Bookmark your favorite video moments with ease! This extension allows you to save and revisit timestamps from YouTube videos effortlessly.
 
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Configuration](#configuration)
+- [Contributing](#contributing)
+- [Contact](https://www.linkedin.com/in/nikhil-patel-7b6558206/)
+- [Troubleshooting](#troubleshooting)
+- [Demo](#demo)
 
- A browser extension designed to work with YouTube. It appears to be intended for bookmarking or saving timestamps in YouTube videos.
- The functionality of the extension would likely be implemented in the specified JavaScript files, such as "background.js" and "contentScript.js," and the popup interface defined in "popup.html."
- 
- The permissions and resources are set up to ensure the extension can interact with YouTube pages and manage its assets.
+### Installation
+1. Clone this repository.
+2. Navigate to the extension settings in your browser.
+3. Enable Developer Mode.
+4. Load the extension by selecting the cloned directory.
+
+### Usage
+1. Visit a YouTube video.
+2. Click the extension icon.
+3. Add a timestamp with a custom label.
+4. Access your saved timestamps anytime from the extension.
+
+### Features
+- Bookmark timestamps with custom labels.
+- Quick access to saved timestamps.
+- Customize extension behavior in settings.
+
+### Screenshots
+![Demo](demo.gif)
+
+### Configuration
+Configure timestamp label format and more in the extension settings.
+
+### Contributing
+We welcome contributions! Feel free to open issues, submit feature requests, or make pull requests.
+
+### Contact
+Have questions or suggestions? Reach out to us at nikzedit@email.com or find us on Twitter [@nikhillumesh](https://twitter.com/nikhillumesh).
+
+### Troubleshooting
+- **Issue:** Timestamps not saving.
+  - **Solution:** Ensure the extension is enabled and permissions are granted.
+- **Issue:** Extension not working on a specific YouTube page.
+  - **Solution:** Clear your browser cache and refresh the page.
+
+### Changelog
+View the [changelog](CHANGELOG.md) for version history.
+
+### Demo
+Watch our [demo video](https://example.com/demo) to see the extension in action.
+
+### Acknowledgments
+We would like to thank the creators of [LibraryName](https://example.com/library) for their invaluable contribution to this project.
+
+---
+
