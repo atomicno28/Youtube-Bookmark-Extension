@@ -58,7 +58,7 @@ Configure timestamp label format and more in the extension settings.
 We welcome contributions! Feel free to open issues, submit feature requests, or make pull requests.
 
 ### Contact
-Have questions or suggestions? Reach out to us at nikzedit@email.com or find us on Twitter [@nikhillumesh](https://twitter.com/nikhillumesh).
+Have questions or suggestions? Reach out to us at nikhilid2205@email.com or find us on Twitter [@nikhillumesh](https://twitter.com/nikhillumesh).
 
 ### Troubleshooting
 - **Issue:** Timestamps not saving.
